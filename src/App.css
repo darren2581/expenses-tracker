@@ -66,7 +66,7 @@ body{
   justify-content: center;
 }
 
-.search-bar .add-transaction .input-name{
+.search-bar .add-transaction .input-details{
   font-size: 0.9rem;
   height: 2rem;
   width: 20rem;
@@ -75,11 +75,11 @@ body{
   border: 1px solid rgba(255, 255, 255, 0.9);
 }
 
-.search-bar .add-transaction .input-name:focus{
+.search-bar .add-transaction .input-details:focus{
   outline-color: #D4F6FF;
 }
 
-.search-bar .add-transaction .input-details{
+.search-bar .add-transaction .input-amount{
   font-size: 0.9rem;
   height: 2rem;
   width: 20rem;
@@ -89,12 +89,23 @@ body{
   margin: 1rem 0;
 }
 
-.search-bar .add-transaction .input-details:focus{
+.search-bar .add-transaction .input-amount:focus{
   outline-color: #D4F6FF;
 }
 
 .search-bar .add-btn{
   padding: 0.2rem 0.8rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.search-bar .add-btn:hover{
+  background-color: #D4F6FF;
+}
+
+.search-bar .add-btn:active{
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .transaction-list .scrollable-list{
