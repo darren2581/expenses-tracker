@@ -5,8 +5,8 @@ import AddExpenses from './components/AddExpenses';
 import ExpensesList from './components/ExpensesList';
 
 function App() {
-  const [budget, setBudget] = useState(1000);
-  const [balance, setBalance] = useState(100);
+  const [budget, setBudget] = useState(2500);
+  const [balance, setBalance] = useState(2500);
   const [expenses, setExpenses] = useState([]);
 
   const addExpenses = (expensesDetails, expensesAmount) => {
@@ -29,7 +29,7 @@ function App() {
       <h2 className='title'>Expenses Tracker</h2>
 
       {/* Overall Transaction Details */}
-      <Summary budget={budget} balance={balance} />
+      <Summary budget={budget} balance={balance} expenses={expenses} />
 
       {/* Add Transaction */}
       <AddExpenses addExpenses={addExpenses} />
