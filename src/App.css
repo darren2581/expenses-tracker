@@ -95,6 +95,7 @@ body{
 
 .search-bar .add-btn{
   padding: 0.2rem 0.8rem;
+  color: black;
   background-color: rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.9);
   cursor: pointer;
